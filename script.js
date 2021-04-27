@@ -1,5 +1,5 @@
 
-const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts/";
+const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true";
 const posts = document.querySelector(".blog");
 
  fetch(F1)
