@@ -13,8 +13,6 @@ formula = (blogs) => {
      let postDiv = ``
      for (blog of blogs) {
          console.log(blog)
-//          let photo = blog._embedded["wp:featuredmedia"]
-//          for(image of photo)
          postDiv =  `
          <div>
          <h2>${blog.title.rendered}</h2>
