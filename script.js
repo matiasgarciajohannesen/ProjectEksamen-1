@@ -7,7 +7,7 @@ const posts = document.querySelector(".blog");
      .then(data => formula(data))
      .catch(error => posts.innerHTML = "ups that went wrong")
 
-formula = (blogs) => {
+const formula = (blogs) => {
      console.log(blogs);
      posts.innerHTML = "";
      let postDiv = ``
