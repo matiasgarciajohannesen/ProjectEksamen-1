@@ -15,14 +15,18 @@ const posts = document.querySelector(".blog");
      .then(data => formula(data))
      .catch(error => console.error(error))
 
-const formula = (blogs) => {
-     console.log(blogs);
+const formula = (blog) => {
+     console.log(blog);
      posts.innerHTML = "";
-     let postDiv =  `
-         <div>
-         <h2>${blogs.title.rendered}</h2>
-         <p>${blogs.content.rendered}</p>
-        </div>
-        `;
-        posts.innerHTML += postDiv;
+     let images = blog._embedded["wp:featuredmedia"]
+     for (image of blog._embedded["wp:featuredmedia"]){
+        postDiv =  `
+        <div>
+        <h2>${blog.title.rendered}</h2>
+        <img src="${image.source_url}" alt="yeet">
+        <p>${blog.content.rendered}</p>
+       </div>
+       `;
+       posts.innerHTML += postDiv;
+       }
  }
