@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: #FF1901;
+}
+
+.logo, h1 {
+    font-size: xx-large;
+}
+
+.navbar, ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar, li{
+    display: inline;
+    color: #FF1901;
+}
+
+.navbar, li a:hover {
+    background-color: white;
+  }
+
+
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: #ffffff;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+
+  .blog, img{
+    width: 50%;
+  }
