@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/contact.css">
 
     <!-- Hotjar Tracking Code for https://modest-kepler-ed6546.netlify.app/index.html -->
 <script>
@@ -19,6 +20,53 @@
 </script>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <h1>Petrolhead Blogg</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <a href="index.html">Home</a>
+                <a href="about.html"><li>About</li></a>
+                <a href="details.html"><li>Details</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+
+        <div class="forum">
+            <form class="contact">
+                <div class="cont">
+                    <h2>Contact me.</h2>
+                    <label for="names">Name: </label>
+                    <input type="text" id="name" names="names">
+                    <span class="namesTxt"></span>
+                </div>
+                <div class="cont">
+                    <label for="subject">Subject: </label>
+                    <input type="text" id="subject" name="subject">
+                    <span class="subTxt" ></span>
+                </div>
+                <div class="cont">
+                    <label for="email">E-mail: </label>
+                    <input type="text" id="email" name="email">
+                    <span class="emailTxt"></span>
+                </div>
+                <div class="cont">
+                    <label for="address">Address: </label>
+                    <input type="text" id="address" name="address">
+                    <span class="addressTxt"></span>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </main>    
+    <a href="index.html"><button>HOME</button></a>
+    <script src="js/contact.js"></script>
     
 </body>
 </html>
