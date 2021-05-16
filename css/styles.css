@@ -9,12 +9,16 @@ html {
 }
 
 header {
-    display: flex;
+    display: grid;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 5px;
     color: white;
     background-color: #FF1901;
+}
+
+.logo {
+    margin: 20px;
 }
 
 .logo, h1 {
@@ -35,20 +39,52 @@ header {
 
 .navbar, li a:hover {
     background-color: white;
-  }
+}
 
 
-  main {
-    display: flex;
+main {
+    display: block;
     justify-content: center;
     margin: 20px;
+    margin-top: 20px;
     background-color: #ffffff;
     background-attachment: fixed;  
     background-size: cover;
 }
 
+.headline {
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+}
 
-  .blog, img{
-    width: 50%;
-  }
+.blog, img{
+    width: 100%;
+}
 
+.blog {
+    display: flex;
+    margin: 40px;
+    overflow: scroll;
+}
+
+.slides, img {
+    width: 200px;
+    height: 200px;
+}
+
+.podium {
+    margin: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+.rest {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.rest, li{
+    margin-top: 10px;
+}
