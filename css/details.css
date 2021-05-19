@@ -39,20 +39,19 @@ header {
 
 
   main {
-    display: flex;
+    display: grid;
     justify-content: center;
     margin: 20px;
+    margin-top: 20px;
     background-color: #ffffff;
-    background-attachment: fixed;  
-    background-size: cover;
 }
 
-
-  .blog, img{
-    width: 50%;
-  }
-
-  .blog {
+  .info {
       display: grid;
       justify-content: center;
+
   }
+
+  
+
+
