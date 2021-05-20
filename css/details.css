@@ -37,9 +37,6 @@ header {
     background-color: white;
   }
 
-
-
-
 .blog {
     display: flex;
     justify-content: center;
@@ -49,7 +46,6 @@ header {
 img {
     width: auto;
     height: 300px;
-    justify-content: center;
 }
 
   
