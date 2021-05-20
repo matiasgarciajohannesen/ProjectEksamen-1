@@ -38,19 +38,19 @@ header {
   }
 
 
-  main {
-    display: grid;
+
+
+.blog {
+    display: flex;
     justify-content: center;
-    margin: 20px;
-    margin-top: 20px;
-    background-color: #ffffff;
+    margin: 40px;
 }
 
-  .info {
-      display: grid;
-      justify-content: center;
-
-  }
+img {
+    width: auto;
+    height: 300px;
+    justify-content: center;
+}
 
   
 
