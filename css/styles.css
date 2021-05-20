@@ -27,19 +27,23 @@ header {
 
 .navbar, ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .navbar, li{
-    display: inline;
+    margin: 5px;
     color: #FF1901;
+    text-decoration: none;
 }
 
-.navbar, li a:hover {
-    background-color: white;
+.navbar a :hover{
+    background-color:white;
+    text-decoration: none;
 }
+
+
 
 
 main {
@@ -82,7 +86,7 @@ main {
     margin: 40px;
     display: grid;
     justify-content: center;
-
+    
 }
 
 .podium-box {
@@ -90,10 +94,16 @@ main {
     display: flex;
 }
 
+.pod-1, .pod-2, .pod-3  {
+    height: 100px;
+    width: auto;
+}
+
 .second {
     margin: 15px;
-    height: 100px;
-    background-color: #FF1901;
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(to top, black 55%, white 45%);
     color: #ffffff;
     text-align: center;
 }
@@ -101,18 +111,25 @@ main {
 .first {
     margin: 15px;
     height: 150px;
-    background-color: #FF1901;
+    width: 150px;
+    background: linear-gradient(to top, black 75%, white 25%);
     color: #ffffff;
     text-align: center;
 }
 
 .third {
     margin: 15px;
-    height: 75px;
-    background-color: #FF1901;
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(to top, black 50%, white 50%);
     color: #ffffff;
     text-align: center;
 }
+
+.podium-bot {
+    margin-bottom: 20px;
+}
+
 
 .rest {
     display: grid;
@@ -124,4 +141,16 @@ main {
 .rest, li{
     margin-top: 10px;
     color: black;
+}
+
+.point {
+    background-color: gray;
+    height: 30px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.point, p {
+    margin: 5px;
 }
