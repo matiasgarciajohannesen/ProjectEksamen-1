@@ -16,6 +16,10 @@ header {
     color: white;
     background-color: #FF1901;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
 
 .logo {
     margin: 20px;
@@ -153,4 +157,14 @@ main {
 
 .point, p {
     margin: 5px;
+}
+
+footer {
+    background-color: black;
+}
+
+.fot {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
 }
