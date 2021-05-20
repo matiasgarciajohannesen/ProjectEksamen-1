@@ -9,12 +9,21 @@ html {
 }
 
 header {
-    display: flex;
+    display: grid;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 5px;
     color: white;
     background-color: #FF1901;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin: 20px;
 }
 
 .logo, h1 {
@@ -23,19 +32,20 @@ header {
 
 .navbar, ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .navbar, li{
-    display: inline;
-    color: #FF1901;
+    margin: 5px;
+    text-decoration: none;
 }
 
-.navbar, li a:hover {
-    background-color: white;
-  }
+.navbar a :hover{
+    background-color:white;
+    text-decoration: none;
+}
 
 .blog {
     display: flex;
@@ -46,8 +56,36 @@ header {
 img {
     width: auto;
     height: 300px;
+    margin: 40px;
 }
 
-  
+.info {
+    display: grid;
+    grid-row: 1fr 1fr;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
 
+
+.top {
+    display: grid;
+    justify-content: center;
+}
+
+h2 {
+    display: grid;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+footer {
+    background-color: black;
+}
+
+.fot {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+}
 
