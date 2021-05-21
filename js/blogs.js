@@ -16,7 +16,7 @@ const formula = (blogs) => {
          console.log(images)
          for (image of blog._embedded["wp:featuredmedia"]){
          postDiv =  `
-         <div>
+         <div class="all">
          <a href="details.html?id=${blog.id}"><h2>${blog.title.rendered}</h2></a>
          <a href="details.html?id=${blog.id}"><img src="${image.source_url}" alt="yeet"></a>
         </div>
