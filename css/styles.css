@@ -38,12 +38,12 @@ a {
 
 .navbar, li{
     margin: 5px;
-    color: #FF1901;
+    color: white;
     text-decoration: none;
 }
 
 .navbar a :hover{
-    background-color:white;
+    background-color:black;
     text-decoration: none;
 }
 
@@ -144,11 +144,11 @@ main {
 
 .rest, li{
     margin-top: 10px;
-    color: black;
 }
 
 .point {
     background-color: gray;
+    color: black;
     height: 30px;
     width: 100%;
     display: grid;
