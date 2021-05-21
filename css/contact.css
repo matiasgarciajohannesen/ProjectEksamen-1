@@ -42,11 +42,19 @@ a {
 }
 
 .navbar a :hover{
-    background-color:white;
+    background-color:black;
     text-decoration: none;
 }
 
-
+main {
+    display: grid;
+    justify-content: center;
+    margin: 100px;
+    margin-top: 100px;
+    background-color: #ffffff;
+    background-attachment: fixed;  
+    background-size: cover;
+}
 
 label { 
     display: inline-block;
@@ -54,9 +62,20 @@ label {
     text-align: right; 
 }
 
+.contact {
+    display: grid;
+    justify-content: center;
+}
+
+h2 {
+    display: grid;
+    justify-content: center;
+}
+
+
 form {
-    background-color: rgb(128, 127, 126);
-    height: 350px;
+    background-color: #FF1901;
+    height: 550px;
     width: 700px;
     opacity: 0.8;
 }
@@ -67,18 +86,44 @@ form > div {
 
 .cont > input {
     height: 30px;
+    width: 300px;
     margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
+.txt > input {
+    height: 150px;
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.submit {
+    display: grid;
+    justify-content: center;
+}
+
 .submit > input {
     display: flex;
     justify-content: center;
-    width: 100px;
+    width: 400px;
     cursor: pointer;
 }
 
 button:hover {
     cursor: pointer;  
+}
+
+
+footer {
+    background-color: black;
+    margin-top: 125px;
+}
+
+.fot {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
 }
