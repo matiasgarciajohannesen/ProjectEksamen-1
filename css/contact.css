@@ -74,10 +74,15 @@ h2 {
 
 
 form {
-    background-color: #FF1901;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(225, 6, 0) 0px 0px 0px 3px;
+    border-radius: 5px;
     height: 550px;
     width: 700px;
     opacity: 0.8;
+}
+
+.contact {
+    background-color: #38383F;
 }
 
 form > div {
