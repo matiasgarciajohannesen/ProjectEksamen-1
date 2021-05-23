@@ -51,6 +51,8 @@ a {
     display: flex;
     justify-content: center;
     margin: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(225, 6, 0) 0px 0px 0px 3px;
+    border-radius: 5px;
 }
 
 img {
@@ -63,8 +65,7 @@ img {
     display: grid;
     grid-row: 1fr 1fr;
     justify-content: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 30px;
 }
 
 
