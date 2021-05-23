@@ -9,12 +9,21 @@ html {
 }
 
 header {
-    display: flex;
+    display: grid;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 5px;
     color: white;
     background-color: #FF1901;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    margin: 20px;
 }
 
 .logo, h1 {
@@ -23,26 +32,59 @@ header {
 
 .navbar, ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .navbar, li{
-    display: inline;
-    color: #FF1901;
+    margin: 5px;
+    text-decoration: none;
 }
 
-.navbar, li a:hover {
-    background-color: white;
-  }
+.navbar a :hover{
+    background-color: black;
+    text-decoration: none;
+}
 
 
-  main {
-    display: flex;
-    flex-direction: row;
+main {
+    display: block;
     justify-content: center;
+    margin: 20px;
+    margin-top: 20px;
     background-color: #ffffff;
     background-attachment: fixed;  
     background-size: cover;
+}
+
+.om {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(225, 6, 0) 0px 0px 0px 3px;
+    border-radius: 5px;
+    margin: 80px;
+}
+h2 {
+    display: grid;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: xx-large;
+}
+
+p {
+    margin: 30px;
+    font-size: medium;
+}
+
+footer {
+    background-color: black;
+    margin-top: 125px;
+}
+
+.fot {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
 }
