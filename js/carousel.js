@@ -50,12 +50,20 @@ posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //btn listener
 
 nextBtn.addEventListener('click',()=>{
+    if(counter >= 4){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
     posts.style.transition = "transform 0.4s ease-in-out";
     counter++;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
     console.log(counter)
 });
 prevBtn.addEventListener('click',()=>{
+    if(counter <= 0){
+        counter= 4
+        posts.style.transform = 'translateX(0px)';
+    }
     posts.style.transition = "transform 0.4s ease-in-out";
     counter--;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -64,6 +72,3 @@ prevBtn.addEventListener('click',()=>{
 });
 
 
-posts.addEventListener('transitionend', () =>{
-    console.log("fired")
-})
