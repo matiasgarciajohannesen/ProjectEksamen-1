@@ -85,20 +85,26 @@ h3 {
     height: 200px;
 }
 
-/* .blog, img{
-    width: 100%;
+#prevBtn {
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    left: 17.5%;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.blog {
-    display: flex;
-    margin: 40px;
-    overflow: scroll;
-    position: relative;
+#nextBtn {
+    height: 40px;
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    right: 17.5%;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.slides {
-    position: relative;
-}*/
 
 .slides, img {
     width: 400px;
