@@ -111,12 +111,25 @@ h3 {
     height: 400px;
 } 
 
+fieldset {
+    border-color: #FF1901;
+    border-width: 3px;
+    margin: 40px;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: xx-large;
+    margin: auto;
+    background-color: #FF1901;
+    color: #ffffff;
+}
+
+
 .podium {
     margin: 40px;
     display: grid;
     justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(225, 6, 0) 0px 0px 0px 3px;
-    border-radius: 5px;
 }
 
 .podium-box {
