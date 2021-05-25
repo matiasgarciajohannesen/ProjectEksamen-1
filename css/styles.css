@@ -76,10 +76,11 @@ h3 {
 }
 
 .karusel {
-    width: 1650px;
-    height: 400px;
+    width: 1700px;
+    height: 600px;
     margin: auto;
     overflow: hidden;
+    
 }
 
 .blog {
@@ -109,18 +110,32 @@ h3 {
 }
 
 
-.slides, img {
+.arrow {
     width: 400px;
     height: 400px;
     margin-right: 13px;
 } 
+
+.slides img {
+    border-radius: 5px;
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+} 
+
+.slides {
+    border: 3px solid #FF1901;
+    border-radius: 8px;
+    margin: 5px;
+    height: 450px;
+}
 
 
 
 fieldset {
     border: 5px solid #FF1901;
     margin: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     border-left: none;
 }
 

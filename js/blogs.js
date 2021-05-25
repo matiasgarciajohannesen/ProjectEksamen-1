@@ -1,5 +1,8 @@
-const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
+
+const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=10";
+const loadMore = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
 const posts = document.querySelector(".allBlogs");
+const more = document.querySelector(".loadMore");
 
  fetch(F1)
      .then(response => response.json())
@@ -27,3 +30,11 @@ const formula = (blogs) => {
          
      }
  }
+
+
+ more.addEventListener("click", ()=> {
+    fetch(loadMore)
+    .then(response => response.json())
+    .then(data => formula(data))
+    .catch(error => console.error(error))
+ })
