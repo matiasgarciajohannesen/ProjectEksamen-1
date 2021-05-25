@@ -86,6 +86,11 @@ a {
     color: black;
 }
 
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
 footer {
     background-color: black;
     margin-top: 125px;
