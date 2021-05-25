@@ -33,35 +33,37 @@
         </div>
     </header>
     <main>
-
-        <div class="forum">
-            <form class="contact">
-                <div class="cont">
-                    <h2>Contact me.</h2>
-                    <label for="names">Name: </label>
-                    <input type="text" id="name" names="names">
-                    <span class="namesTxt"></span>
+        <fieldset>
+            <legend>Contact me.</legend>
+                <div class="forum">
+                    <form class="contact">
+                        <div class="cont">
+                            <label for="names">Name: </label>
+                            <input type="text" id="name" names="names">
+                            <span class="namesTxt"></span>
+                        </div>
+                        <div class="cont">
+                            <label for="email">E-mail: </label>
+                            <input type="text" id="email" name="email">
+                            <span class="emailTxt"></span>
+                        </div>  
+                        <div class="cont">
+                            <label for="address">Address: </label>
+                            <input type="text" id="address" name="address">
+                            <span class="addressTxt"></span>
+                        </div>                              
+                        <div class="txt">
+                            <label for="subject">Wright here: </label>
+                            <!-- <input type="text" id="subject" name="subject"> -->
+                            <textarea name="text" id="subject"></textarea>
+                            <span class="subTxt" ></span>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
                 </div>
-                <div class="cont">
-                    <label for="email">E-mail: </label>
-                    <input type="text" id="email" name="email">
-                    <span class="emailTxt"></span>
-                </div>  
-                <div class="cont">
-                    <label for="address">Address: </label>
-                    <input type="text" id="address" name="address">
-                    <span class="addressTxt"></span>
-                </div>                              
-                <div class="txt">
-                    <label for="subject">Wright here: </label>
-                    <input type="text" id="subject" name="subject">
-                    <span class="subTxt" ></span>
-                </div>
-                <div class="submit">
-                    <input type="submit" value="submit">
-                </div>
-            </form>
-        </div>
+        </fieldset>
     </main>  
     
     <footer>

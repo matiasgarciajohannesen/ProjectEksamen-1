@@ -118,7 +118,7 @@ h3 {
 
 
 fieldset {
-    border-color: #FF1901;
+    border: 5px solid #FF1901;
     margin: 40px;
     border-radius: 5px;
     border-left: none;
