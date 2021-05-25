@@ -1,4 +1,4 @@
-const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true";
+const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
 const carouselContainer = document.querySelector('.karusel');
 const posts = document.querySelector(".blog");
 
@@ -50,7 +50,7 @@ posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //btn listener
 
 nextBtn.addEventListener('click',()=>{
-    if(counter >= 4){
+    if(counter >= 2){
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
@@ -61,7 +61,7 @@ nextBtn.addEventListener('click',()=>{
 });
 prevBtn.addEventListener('click',()=>{
     if(counter <= 0){
-        counter= 4
+        counter= 3
         posts.style.transform = 'translateX(0px)';
     }
     posts.style.transition = "transform 0.4s ease-in-out";

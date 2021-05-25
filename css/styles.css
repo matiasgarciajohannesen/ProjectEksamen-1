@@ -73,7 +73,7 @@ h3 {
 }
 
 .karusel {
-    width: 800px;
+    width: 1650px;
     height: 400px;
     margin: auto;
     overflow: hidden;
@@ -90,7 +90,7 @@ h3 {
     position: absolute;
     top: 40%;
     z-index: 10;
-    left: 17.5%;
+    left: -5%;
     font-size: 30px;
     cursor: pointer;
 }
@@ -100,7 +100,7 @@ h3 {
     position: absolute;
     top: 40%;
     z-index: 10;
-    right: 17.5%;
+    right: -5.1%;
     font-size: 30px;
     cursor: pointer;
 }
@@ -109,6 +109,7 @@ h3 {
 .slides, img {
     width: 400px;
     height: 400px;
+    margin-right: 13px;
 } 
 
 fieldset {
@@ -116,13 +117,12 @@ fieldset {
     border-width: 3px;
     margin: 40px;
     border-radius: 5px;
+    border-left: none;
 }
 
 legend {
     font-size: xx-large;
-    margin: auto;
-    background-color: #FF1901;
-    color: #ffffff;
+    color: #FF1901;
 }
 
 
@@ -133,19 +133,21 @@ legend {
 }
 
 .podium-box {
+    width: 100%;
+    height: auto;
     margin: 10px;
     display: flex;
 }
 
 .pod-1, .pod-2, .pod-3  {
-    height: 100px;
+    height: 200px;
     width: auto;
 }
 
 .second {
     margin: 15px;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     background: linear-gradient(to top, #38383F 55%, white 45%);
     color: #ffffff;
     text-align: center;
@@ -153,8 +155,8 @@ legend {
 
 .first {
     margin: 15px;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     background: linear-gradient(to top, #38383F 75%, white 25%);
     color: #ffffff;
     text-align: center;
@@ -162,8 +164,8 @@ legend {
 
 .third {
     margin: 15px;
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
     background: linear-gradient(to top, #38383F 50%, white 50%);
     color: #ffffff;
     text-align: center;
