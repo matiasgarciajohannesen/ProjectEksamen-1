@@ -1,6 +1,6 @@
 
-const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=10";
-const loadMore = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
+const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=9";
+const loadMore = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=3&offset=9";
 const posts = document.querySelector(".allBlogs");
 const more = document.querySelector(".loadMore");
 
@@ -11,7 +11,6 @@ const more = document.querySelector(".loadMore");
 
 const formula = (blogs) => {
      console.log(blogs);
-     posts.innerHTML = "";
      let postDiv = ``
      for (blog of blogs) {
          console.log(blog)
@@ -37,4 +36,5 @@ const formula = (blogs) => {
     .then(response => response.json())
     .then(data => formula(data))
     .catch(error => console.error(error))
+    more.style.display="none"
  })
