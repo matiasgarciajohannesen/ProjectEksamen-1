@@ -46,7 +46,7 @@ nav {
 }
 
 .burger {
-    display: none;
+   display: none; 
 }
 
 .burger div {
@@ -82,11 +82,10 @@ h3 {
 }
 
 .karusel {
-    width: 1706px;
-    height: 600px;
+    width: 1306px;
+    height: 500px;
     margin: auto;
     overflow: hidden;
-    
 }
 
 .blog {
@@ -98,9 +97,8 @@ h3 {
 #prevBtn {
     height: 40px;
     position: absolute;
-    top: 40%;
-    z-index: 10;
-    left: -6.5%;
+    top: 30%;
+    left: 4%;
     font-size: 30px;
     cursor: pointer;
 }
@@ -108,9 +106,8 @@ h3 {
 #nextBtn {
     height: 40px;
     position: absolute;
-    top: 40%;
-    z-index: 10;
-    right: -7.1%;
+    top: 30%;
+    right: 4%;
     font-size: 30px;
     cursor: pointer;
 }
@@ -119,21 +116,21 @@ h3 {
 .arrow {
     width: 400px;
     height: 400px;
-    /* margin-right: 13px; */
 } 
 
 .slides img {
     border-radius: 5px;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 5px;
+    
 } 
 
 .slides {
     border: 3px solid #FF1901;
     border-radius: 8px;
     margin: 5px;
-    height: 450px;
+    height: 350px;
 }
 
 .slides a {
@@ -249,6 +246,7 @@ footer {
 
     body{
         overflow-x: hidden;
+        z-index: 1;
     }
 
     .nav-links {
@@ -301,7 +299,9 @@ footer {
     
 .nav-active {
     transform: translateX(0%);
+    z-index: 1;
 }
+
 
 @keyframes navLinkFade {
     from {
