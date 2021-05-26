@@ -22,11 +22,13 @@ const formula = (blog) => {
      for (image of blog._embedded["wp:featuredmedia"]){
         postDiv =  `
         <div class="info">
+        <fieldset>
+        <legend>${blog.title.rendered}</legend>
         <div class="top">
-        <h2>${blog.title.rendered}</h2>
         <img src="${image.source_url}" alt="yeet">
         </div>
         <p>${blog.content.rendered}</p>
+        </fieldset>
        </div>
        `;
        posts.innerHTML += postDiv;

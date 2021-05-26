@@ -62,8 +62,18 @@ nav {
     display: flex;
     justify-content: center;
     margin: 40px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(225, 6, 0) 0px 0px 0px 3px;
-    border-radius: 5px;
+}
+
+fieldset {
+    border: 5px solid #FF1901;
+    margin: 40px;
+    border-radius: 8px;
+    border-left: none;
+}
+
+legend {
+    font-size: xx-large;
+    color: #FF1901;
 }
 
 img {
@@ -85,20 +95,36 @@ img {
     justify-content: center;
 }
 
-h2 {
-    display: grid;
-    margin-bottom: 20px;
-    justify-content: center;
+p {
+    margin-bottom: 10px;
 }
 
 footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
     background-color: black;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fot a {
+    color: #e2e0e0;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .fot {
     color: white;
     margin: 20px;
     text-decoration: none;
+    list-style: none;
+    
 }
 
 /* tablet */

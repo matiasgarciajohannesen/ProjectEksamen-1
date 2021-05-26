@@ -134,6 +134,11 @@ form > div {
     margin-left: 10px;
 }
 
+.namesTxt{
+    display: flex;
+    justify-content: center;
+}
+
 .submit {
     display: grid;
     justify-content: center;
