@@ -56,21 +56,10 @@ nav {
     margin: 5px;
 }
 
-fieldset {
-    border: 5px solid #FF1901;
-    margin: 40px;
-    border-radius: 8px;
-    border-left: none;
-}
-
-legend {
-    font-size: xx-large;
-    color: #FF1901;
-}
 
 main {
-    /* display: grid;
-    justify-content: center; */
+    display: grid;
+    justify-content: center;
     margin: 100px;
     margin-top: 100px;
     background-color: #ffffff;
@@ -99,6 +88,7 @@ fieldset {
     border: 5px solid #FF1901;
     border-radius: 5px;
     border-left: none;
+    width: 600px;
 }
 
 legend {
@@ -122,7 +112,6 @@ form {
 
 .contact {
     margin-bottom: 10px;
-    background-color: #38383F;
 }
 
 form > div {
@@ -151,14 +140,11 @@ form > div {
 }
 
 .submit > input {
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    cursor: pointer;
-}
-
-button:hover {
-    cursor: pointer;  
+    width: 100px;
+    height: 25px;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 8px;
 }
 
 
