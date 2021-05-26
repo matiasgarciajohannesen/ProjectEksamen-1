@@ -20,7 +20,7 @@
 </script>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div class="logo">
             <h1>Petrolhead Blogg</h1>
         </div>
@@ -32,22 +32,38 @@
                 
             </ul>
         </div>
-    </header>
-    
-        <div class="head">
-            <h2>All blogs</h2>
+    </header> -->
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"><h4>Forumula Blog</h4></a>
         </div>
-    <main>
-
-        <div class="allBlogs">
-
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blogs.html">All blogs</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
         </div>
+    </nav>
 
-        
-    </main>
-    <div class="btn">
-        <button class="loadMore">view more</button>
-    </div>
+    <fieldset>
+        <legend>All blogs</legend>
+        <main>
+
+            <div class="allBlogs">
+
+            </div>
+
+            
+        </main>
+        <div class="btn">
+            <button class="loadMore">view more</button>
+        </div>
+    </fieldset>
     <footer>
         <ul class="footer">
             <li class="fot">Contact us</li>
@@ -58,5 +74,6 @@
 
     
     <script src="js/blogs.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 </html>

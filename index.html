@@ -20,18 +20,21 @@
 </script>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="logo">
-            <h1>Petrolhead Blogg</h1>
+            <a href="index.html"><h4>Forumula Blog</h4></a>
         </div>
-        <div class="navbar">
-            <ul>
-                <a href="about.html"><li>About</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-                <a href="blogs.html"><li>All Blogs</li></a>
-            </ul>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blogs.html">All blogs</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
         </div>
-    </header>
+    </nav>
         
             <div class="headline">
                 <h2>Latest Poasts</h2>
@@ -47,12 +50,11 @@
 
             <br>
     <main>
-      <div class="headline">
-        <h2>Info</h2>
-      </div>
-      
-      <br>
-      <h3>This site is a formula one blog. It wil have information about some different teams and drivers. <br> There wil also be info about this season and some historical events pluss some famous crashes.</h3>
+
+        <fieldset>
+            <legend>info</legend>
+            <h3>This site is a formula one blog. It wil have information about some different teams and drivers. <br> There wil also be info about this season and some historical events pluss some famous crashes. <br> There wil be a podium thath changes as races goes to ceep you updated on the results in the drivers championship</h3>
+        </fieldset>
 
       <fieldset>
           <legend>Podium</legend>
@@ -106,7 +108,7 @@
     </footer>
 
     
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/hamburger.js"></script>
     <script src="js/carousel.js"></script>
 </body>
 </html>
