@@ -154,14 +154,31 @@ form > div {
 
 
 footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
     background-color: black;
-    margin-top: 125px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.fot a {
+    color: #e2e0e0;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .fot {
     color: white;
     margin: 20px;
     text-decoration: none;
+    list-style: none;
+    
 }
 
 
