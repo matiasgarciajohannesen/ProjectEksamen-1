@@ -166,6 +166,7 @@ legend {
     margin: 40px;
     display: grid;
     justify-content: center;
+    width: 100%;
 }
 
 .podium-box {
@@ -273,6 +274,11 @@ footer {
     .karusel {
         width: 980px;
     }
+
+    .podium {
+        display: grid;
+        justify-content: center;
+    }
     
 }
 
@@ -309,32 +315,50 @@ footer {
         display: block;
     }
 
-    .allBlogs{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        
-    }
-
-    .all {
-        margin: 20px;
-        width: 210px;
-        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-        border-radius: 8px;
-    }
-
-    .all img {
-        display: flex;
-        justify-content: center;
-        width: 200px;
-        height: 100px;
-        margin: 5px;
-        border-radius: 8px;
-    }
 
     .karusel {
         width: 652px;
+    }
+
+    .podium {
+        width: 600px;
+    }
+
+    .pod-1, .pod-2, .pod-3  {
+        height: 100px;
+        width: auto;
+    }
+    
+    .second {
+        margin: 15px;
+        height: 200px;
+        width: 200px;
+        background: linear-gradient(to top, #38383F 55%, white 45%);
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .first {
+        margin: 15px;
+        height: 200px;
+        width: 200px;
+        background: linear-gradient(to top, #38383F 75%, white 25%);
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .third {
+        margin: 15px;
+        height: 200px;
+        width: 200px;
+        background: linear-gradient(to top, #38383F 50%, white 50%);
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .rest {
+        width: 655px;
+        margin-left: 25px;
     }
 
 }
