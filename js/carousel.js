@@ -55,14 +55,18 @@ nextBtn.addEventListener('click',()=>{
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
+    else if( carouselContainer.clientWidth === 980 && counter >= 3){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
     else if( carouselContainer.clientWidth === 652 && counter >= 5){
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
-    // else if( carouselContainer.clientWidth === 1306 && counter >= 2){
-    //     counter= -1
-    //     posts.style.transform = 'translateX(0px)';
-    // }
+    else if( carouselContainer.clientWidth === 326 && counter >= 11){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
     
     posts.style.transition = "transform 0.4s ease-in-out";
     counter++;
@@ -74,14 +78,18 @@ prevBtn.addEventListener('click',()=>{
         counter= 3
         posts.style.transform = 'translateX(0px)';
     }
+    else if( carouselContainer.clientWidth === 980 && counter <= 0){
+        counter= 4
+        posts.style.transform = 'translateX(0px)';
+    }
     else if( carouselContainer.clientWidth === 652 && counter <= 0){
         counter= 6
         posts.style.transform = 'translateX(0px)';
     }
-    // else if( carouselContainer.clientWidth === 1306 && counter <= 2){
-    //     counter= -1
-    //     posts.style.transform = 'translateX(0px)';
-    // }
+    else if( carouselContainer.clientWidth === 326 && counter <= 0){
+        counter= 11
+        posts.style.transform = 'translateX(0px)';
+    }
     posts.style.transition = "transform 0.4s ease-in-out";
     counter--;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';

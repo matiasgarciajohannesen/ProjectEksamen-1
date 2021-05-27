@@ -265,6 +265,17 @@ footer {
     
 }
 
+
+/* pc */
+
+@media screen and (max-width: 1024px){
+
+    .karusel {
+        width: 980px;
+    }
+    
+}
+
 /* tablet */
 
 @media screen and (max-width:768px){
@@ -326,23 +337,6 @@ footer {
         width: 652px;
     }
 
-    #prevBtn {
-        height: 40px;
-        position: absolute;
-        top: 30%;
-        left: 0;
-        font-size: 30px;
-        z-index: 1;
-    }
-    
-    #nextBtn {
-        height: 40px;
-        position: absolute;
-        top: 30%;
-        right: 0;
-        font-size: 30px;
-        z-index: 1;
-    }
 }
     
 .nav-active {
@@ -379,3 +373,11 @@ footer {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+
+
+/*Tablet */
+@media screen and (max-width:375px) {
+    .karusel {
+        width: 326px;
+    }
+}
