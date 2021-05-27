@@ -374,6 +374,57 @@ footer {
 }
 
 
+
+/*mobil */
+@media screen and (max-width:425px) {
+    .karusel {
+        width: 326px;
+    }
+
+    .podium {
+        width: 250px;
+    }
+
+    .pod-1, .pod-2, .pod-3  {
+        height: 80px;
+        width: auto;
+    }
+    
+    .second {
+        margin: 5px;
+        height: 160px;
+        width: 100px;
+        background: linear-gradient(to top, #38383F 55%, white 45%);
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .first {
+        margin: 5px;
+        height: 160px;
+        width: 100px;
+        background: linear-gradient(to top, #38383F 75%, white 25%);
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .third {
+        margin: 5px;
+        height: 160px;
+        width: 100px;
+        background: linear-gradient(to top, #38383F 50%, white 50%);
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .rest {
+        width: 265px;
+        margin-left: 40px;
+    }
+
+
+}
+
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -395,13 +446,4 @@ footer {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-}
-
-
-
-/*Tablet */
-@media screen and (max-width:375px) {
-    .karusel {
-        width: 326px;
-    }
 }
