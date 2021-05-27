@@ -17,7 +17,7 @@ function validateForm(e) {
     console.log("Name: " + submittedName);
     namesTxt.innerHTML = "";
       
-    if (submittedName.length < 2) {
+    if (submittedName.length < 5) {
         namesTxt.innerHTML += "Name has to be a minimum of 2 characters!";
     }
     if (/\d/.test(submittedName)) {

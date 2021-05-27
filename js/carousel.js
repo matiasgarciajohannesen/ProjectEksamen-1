@@ -51,20 +51,37 @@ posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //btn listener
 
 nextBtn.addEventListener('click',()=>{
-    if(counter >= 2){
+    if( carouselContainer.clientWidth === 1306 && counter >= 2){
         counter= -1
         posts.style.transform = 'translateX(0px)';
     }
+    else if( carouselContainer.clientWidth === 652 && counter >= 5){
+        counter= -1
+        posts.style.transform = 'translateX(0px)';
+    }
+    // else if( carouselContainer.clientWidth === 1306 && counter >= 2){
+    //     counter= -1
+    //     posts.style.transform = 'translateX(0px)';
+    // }
+    
     posts.style.transition = "transform 0.4s ease-in-out";
     counter++;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
     console.log(counter)
 });
 prevBtn.addEventListener('click',()=>{
-    if(counter <= 0){
+    if(carouselContainer.clientWidth === 1306 && counter <= 0){
         counter= 3
         posts.style.transform = 'translateX(0px)';
     }
+    else if( carouselContainer.clientWidth === 652 && counter <= 0){
+        counter= 6
+        posts.style.transform = 'translateX(0px)';
+    }
+    // else if( carouselContainer.clientWidth === 1306 && counter <= 2){
+    //     counter= -1
+    //     posts.style.transform = 'translateX(0px)';
+    // }
     posts.style.transition = "transform 0.4s ease-in-out";
     counter--;
     posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
