@@ -94,6 +94,7 @@ fieldset {
 legend {
     font-size: xx-large;
     color: #FF1901;
+    padding-right: 20px;
 }
 
 .forum{
@@ -241,6 +242,11 @@ footer {
 .nav-active {
     transform: translateX(0%);
     z-index: 1;
+}
+
+.noScroll {
+    height: 100%;
+    overflow: hidden;
 }
 
 @keyframes navLinkFade {

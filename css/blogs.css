@@ -66,6 +66,7 @@ fieldset {
 legend {
     font-size: xx-large;
     color: #FF1901;
+    padding-right: 20px;
 }
   main {
     display: flex;
@@ -220,6 +221,11 @@ footer {
     
 .nav-active {
     transform: translateX(0%);
+}
+
+.noScroll {
+    height: 100%;
+    overflow: hidden;
 }
 
 @keyframes navLinkFade {

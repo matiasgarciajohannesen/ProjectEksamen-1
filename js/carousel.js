@@ -19,7 +19,7 @@ const formula = (blogs) => {
          for (image of blog._embedded["wp:featuredmedia"]){
             postDiv =  `
             <div class="slides">
-                <a href="details.html?id=${blog.id}"><h2>${blog.title.rendered}</h2></a>
+                <a href="details.html?id=${blog.id}"><h3>${blog.title.rendered}</h3></a>
                 <a href="details.html?id=${blog.id}"><img id= karuImg src="${image.source_url}" alt="yeet"></a>
             </div>
             `;
