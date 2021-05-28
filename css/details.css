@@ -171,6 +171,12 @@ footer {
         margin: 5px;
     }
 
+    .top img {
+        width: 400px;
+        height: auto;
+        margin: 10px;
+    }
+
 }
 
 
@@ -186,7 +192,7 @@ footer {
 
     .top img {
         margin: auto;
-        width: 300px;
+        width: 80%;
         height: auto;
     }
 }
