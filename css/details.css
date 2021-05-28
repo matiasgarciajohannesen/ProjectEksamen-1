@@ -130,13 +130,17 @@ footer {
 
 /* tablet */
 
-@media screen and (max-width:1024px){
+/* tablet */
+
+@media screen and (max-width:768px){
 
     body{
         overflow-x: hidden;
+        
     }
 
     .nav-links {
+        display: none;
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -146,8 +150,9 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in;
+        z-index: 2;
     } 
 
     .nav-links li{
@@ -158,33 +163,20 @@ footer {
         display: block;
     }
 
-    .allBlogs{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        
+    .om {
+        margin: 0;
     }
 
-    .all {
-        margin: 20px;
-        width: 210px;
-        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-        border-radius: 8px;
-    }
-
-    .all img {
-        display: flex;
-        justify-content: center;
-        width: 200px;
-        height: 100px;
+    .om p{
+        font-size: medium;
         margin: 5px;
-        border-radius: 8px;
     }
+
 }
     
 .nav-active {
     transform: translateX(0%);
+    z-index: 2;
 }
 
 .noScroll {
@@ -202,3 +194,15 @@ footer {
         transform: translateX(0px);
     }
 }  
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
