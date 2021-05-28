@@ -57,7 +57,7 @@ nav {
 }
 
 
-main {
+.main {
     display: grid;
     justify-content: center;
     margin: 100px;
@@ -107,7 +107,7 @@ form {
     justify-content: center;
     border-radius: 5px;
     height: 550px;
-    width: 700px;
+    width: 75%;
     opacity: 0.8;
 }
 
@@ -185,13 +185,15 @@ footer {
 
 /* tablet */
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:768px){
 
     body{
         overflow-x: hidden;
+        
     }
 
     .nav-links {
+        display: none;
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -201,8 +203,9 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in;
+        z-index: 2;
     } 
 
     .nav-links li{
@@ -211,37 +214,41 @@ footer {
 
     .burger {
         display: block;
-        cursor: pointer;
     }
 
-    .allBlogs{
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+
+    fieldset {
+        margin:  30px 0 30px 0;
+    }
+
+}
+
+/*mobil */
+@media screen and (max-width:425px) {
+
+    .main {
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
         justify-content: center;
-        
     }
 
-    .all {
+    fieldset {
+        width: 90%;
         margin: 20px;
-        width: 210px;
-        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-        border-radius: 8px;
     }
 
-    .all img {
-        display: flex;
-        justify-content: center;
-        width: 200px;
-        height: 100px;
-        margin: 5px;
-        border-radius: 8px;
+    .forum {
+        width: auto;
     }
 }
     
 .nav-active {
     transform: translateX(0%);
-    z-index: 1;
+    z-index: 2;
 }
 
 .noScroll {
