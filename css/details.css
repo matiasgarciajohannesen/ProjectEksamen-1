@@ -186,6 +186,8 @@ footer {
 
     .top img {
         margin: auto;
+        width: 300px;
+        height: auto;
     }
 }
     
