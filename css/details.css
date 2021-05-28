@@ -128,7 +128,6 @@ footer {
     
 }
 
-/* tablet */
 
 /* tablet */
 
@@ -172,6 +171,22 @@ footer {
         margin: 5px;
     }
 
+}
+
+
+@media screen and (max-width: 425px) {
+    
+    fieldset {
+        margin: auto;
+    }
+
+    .top {
+        width: auto;
+    }
+
+    .top img {
+        margin: auto;
+    }
 }
     
 .nav-active {
