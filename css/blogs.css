@@ -161,7 +161,16 @@ footer {
     
 }
 
+/* pc */
 
+@media screen and (max-width: 1024px){
+
+    .allBlogs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
 
 /* tablet */
 
@@ -205,100 +214,11 @@ footer {
         margin:  30px 0 30px 0;
     }
 
-}
-
-/*mobil */
-@media screen and (max-width:425px) {
-
-    .main {
-        width: 100%;
-        display: grid;
-        justify-content: center;
-    }
-
-    fieldset {
-        width: 90%;
-        margin: 20px;
-    }
-
-    .forum {
+    .allBlogs {
         width: auto;
-    }
-}
-    
-.nav-active {
-    transform: translateX(0%);
-    z-index: 2;
-}
-
-.noScroll {
-    height: 100%;
-    overflow: hidden;
-}
-
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}  
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-    opacity: 0;
-}
-
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-}/* tablet */
-
-@media screen and (max-width:768px){
-
-    body{
-        overflow-x: hidden;
-        
-    }
-
-    .nav-links {
-        display: none;
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color: #FF1901;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: translateX(-100%);
-        transition: transform 0.3s ease-in;
-        z-index: 2;
-    } 
-
-    .nav-links li{
-        opacity: 0;
     }
-
-    .burger {
-        display: block;
-    }
-
-    .main {
-        width: 100%;
-        margin: 0;
-    }
-
-    fieldset {
-        margin:  30px 0 30px 0;
-    }
-
 }
 
 /*mobil */
@@ -324,14 +244,15 @@ footer {
     }
     
     .all img {
-        width: 240px;
-        height: 240px;
+        width: 220px;
+        height: 220px;
     }
 
     .all h2{
         font-size: medium;
     }
-    
+}    
+
 .nav-active {
     transform: translateX(0%);
     z-index: 2;
@@ -341,6 +262,7 @@ footer {
     height: 100%;
     overflow: hidden;
 }
+
 
 @keyframes navLinkFade {
     from {
