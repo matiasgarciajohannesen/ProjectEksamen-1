@@ -8,6 +8,10 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+    position: relative;
+}
+
 
 nav {
     display: flex;
@@ -129,14 +133,35 @@ footer {
     
 }
 
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modalScreen{
+    overflow: hidden;
+    height: 100vh;
+}
+
+.big {
+    z-index: 3;
+    cursor: pointer;
+}
+
 
 /* tablet */
 
 @media screen and (max-width:768px){
 
-    body{
-        overflow-x: hidden;
-        
+    body {
+        overflow-x: hidden;  
     }
 
     .nav-list {

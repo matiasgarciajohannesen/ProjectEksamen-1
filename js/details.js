@@ -9,6 +9,8 @@ console.log(id)
 
 const F1 = `https://matiasjohannesen.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const posts = document.querySelector(".blog");
+const modal = document.querySelector(".modal");
+const body = document.querySelector("body");
 
  fetch(F1)
      .then(response => response.json())
@@ -25,7 +27,7 @@ const formula = (blog) => {
         <fieldset>
         <legend>${blog.title.rendered}</legend>
         <div class="top">
-        <img src="${image.source_url}" alt="yeet">
+        <img onClick="funcModal()" class="big" src="${image.source_url}" alt="yeet">
         </div>
         <p>${blog.content.rendered}</p>
         </fieldset>
@@ -33,4 +35,22 @@ const formula = (blog) => {
        `;
        posts.innerHTML += postDiv;
        }
+
+
+
+       
  }
+
+
+ const funcModal = () => {
+      const large = document.querySelector(".big");
+      modal.style.display = "flex";
+      body.classlist.add("modalScreen");
+      document.documentElement.scrollTop = "0";
+ }
+
+
+ modal.addEventListener("click", () =>{
+      modal.style.display = "none";
+      body.classList.remove("modalScreen")
+ });
