@@ -34,6 +34,8 @@ const formula = (blog) => {
        </div>
        `;
        posts.innerHTML += postDiv;
+
+       modal.innerHTML = `<img class="img-click" src="${image.source_url}" alt="yeet">`
        }
 
 
@@ -45,7 +47,7 @@ const formula = (blog) => {
  const funcModal = () => {
       const large = document.querySelector(".big");
       modal.style.display = "flex";
-      body.classlist.add("modalScreen");
+      body.classList.add("modalScreen");
       document.documentElement.scrollTop = "0";
  }
 

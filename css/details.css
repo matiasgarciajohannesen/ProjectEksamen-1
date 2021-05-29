@@ -138,11 +138,11 @@ footer {
     height: 100%;
     position: absolute;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.897);
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 999999;
 }
 
 .modalScreen{
@@ -151,8 +151,12 @@ footer {
 }
 
 .big {
-    z-index: 3;
     cursor: pointer;
+}
+
+.img-click {
+    height: 500px;
+    width: auto;
 }
 
 
