@@ -18,7 +18,7 @@ function validateForm(e) {
     namesTxt.innerHTML = "";
       
     if (submittedName.length < 5) {
-        namesTxt.innerHTML += "Name has to be a minimum of 2 characters!";
+        namesTxt.innerHTML += "Name has to be a minimum of 5 characters!";
     }
     if (/\d/.test(submittedName)) {
         namesTxt.innerHTML += "The name cant contain numbers!";
