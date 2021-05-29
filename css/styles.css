@@ -14,6 +14,7 @@ nav {
     align-items: center;
     min-height: 8vh;
     background-color: #FF1901;
+    width: 100%;
 }
 
 .logo {
@@ -80,6 +81,7 @@ h3 {
     display: grid;
     justify-content: center;
     margin: 5px 0 5px 0;
+    font-weight: normal;
 }
 
 .karusel {
@@ -93,7 +95,7 @@ h3 {
 
 .blog {
     display: flex;
-    width: 100%;
+    width: auto;
     height: 400px;
 }
 
