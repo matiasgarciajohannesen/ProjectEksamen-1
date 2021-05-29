@@ -87,7 +87,7 @@ prevBtn.addEventListener('click',()=>{
         posts.style.transform = 'translateX(0px)';
     }
     else if( carouselContainer.clientWidth === 326 && counter <= 0){
-        counter= 11
+        counter= 12
         posts.style.transform = 'translateX(0px)';
     }
     posts.style.transition = "transform 0.4s ease-in-out";
