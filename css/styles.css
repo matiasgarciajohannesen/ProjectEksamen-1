@@ -416,6 +416,69 @@ footer {
 
 
 }
+/*liten mobil */
+@media screen and (max-width:320px) {
+    .karusel {
+        width: 276px;
+    }
+
+    .slides img {
+        border-radius: 5px;
+        width: 250px;
+        height: 250px;
+        margin: 5px;
+    } 
+
+    fieldset{
+        width: 210px;
+        margin: 0;
+    }
+
+    .podium {
+        width: 200px;
+    }
+
+    .pod-1, .pod-2, .pod-3  {
+        height: 60px;
+        width: auto;
+    }
+    
+    .second {
+        
+        height: 160px;
+        width: 80px;
+        background: linear-gradient(to top, #38383F 55%, white 45%);
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .first {
+        
+        height: 160px;
+        width: 80px;
+        background: linear-gradient(to top, #38383F 75%, white 25%);
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .third {
+        
+        height: 160px;
+        width: 80px;
+        background: linear-gradient(to top, #38383F 50%, white 50%);
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .rest {
+        width: 265px;
+        margin-left: 10px;
+    }
+
+
+}
+
+
 
 @keyframes navLinkFade {
     from {
