@@ -29,29 +29,29 @@ nav {
     color: #ffffff;
 }
 
-.nav-links {
+.nav-list {
     display: flex;
     justify-content: space-around;
     width: 35%;
     z-index: 2;
 }
 
-.nav-links li {
+.nav-list li {
     list-style: none;
 }
 
-.nav-links a {
+.nav-list a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
 }
 
-.burger {
+.menu {
    display: none; 
 }
 
-.burger div {
+.menu div {
     width: 25px;
     height: 3px;
     background-color: #fff;
@@ -285,7 +285,7 @@ footer {
         overflow-x: hidden;
     }
 
-    .nav-links {
+    .nav-list {
         display: none;
         position: absolute;
         right: 0px;
@@ -301,11 +301,11 @@ footer {
         z-index: 2;
     } 
 
-    .nav-links li{
+    .nav-list li{
         opacity: 0;
     }
 
-    .burger {
+    .menu {
         display: block;
     }
 
@@ -428,14 +428,14 @@ footer {
     }
 }  
 
-.toggle .line1 {
+.toggle .menuLine1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggle .line2 {
+.toggle .menuLine2 {
     opacity: 0;
 }
 
-.toggle .line3 {
+.toggle .menuLine3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
