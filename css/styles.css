@@ -121,8 +121,6 @@ h3 {
 .arrow {
     height: 400px;
     background-color: #0000005d;
-    
-    
 } 
 
 .slides img {
@@ -130,7 +128,6 @@ h3 {
     width: 300px;
     height: 300px;
     margin: 5px;
-    
 } 
 
 .slides {
@@ -147,8 +144,6 @@ h3 {
     color: black;
 }
 
-
-
 fieldset {
     border: 5px solid #FF1901;
     margin: 40px;
@@ -161,7 +156,6 @@ legend {
     color: #FF1901;
     padding-right: 20px;
 }
-
 
 .podium {
     margin: 40px;
@@ -219,7 +213,6 @@ legend {
     justify-content: center;
     margin-top: 10px;
     background-color: #38383F;
-    
 }
 
 .rest, li{
@@ -264,7 +257,6 @@ footer {
     margin: 20px;
     text-decoration: none;
     list-style: none;
-    
 }
 
 
@@ -289,7 +281,6 @@ footer {
 
     body{
         overflow-x: hidden;
-        
     }
 
     .nav-links {
@@ -315,7 +306,6 @@ footer {
     .burger {
         display: block;
     }
-
 
     .karusel {
         width: 652px;
@@ -373,7 +363,6 @@ footer {
     height: 100%;
     overflow: hidden;
 }
-
 
 
 /*mobil */
