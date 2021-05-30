@@ -34,14 +34,14 @@ const formula = (blogs) => {
 
 
 
-//  const carouselImages = document.querySelectorAll('.blog');
 
 
- //buttons
+
+ 
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 
-//counter
+
 
 let counter = 0;
 const size = carouselContainer.clientWidth;
@@ -50,7 +50,7 @@ console.log(size);
 posts.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 
-//btn listener
+
 
 nextBtn.addEventListener('click',()=>{
     if( carouselContainer.clientWidth === 1306 && counter >= 2){
