@@ -23,6 +23,7 @@ const load = document.querySelector(".loading");
 const formula = (blog) => {
      console.log(blog);
      posts.innerHTML = "";
+     document.title = `Formula Blogs | ${blog.title.rendered}`
      let images = blog._embedded["wp:featuredmedia"]
      for (image of blog._embedded["wp:featuredmedia"]){
         postDiv =  `
