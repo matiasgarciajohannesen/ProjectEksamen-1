@@ -76,6 +76,11 @@ main {
     justify-content: center;
 }
 
+.gif {
+    width: 208px;
+    height: 62px;
+}
+
 
 .headline {
     display: grid;

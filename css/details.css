@@ -74,6 +74,11 @@ nav {
     justify-content: center;
 }
 
+.gif {
+    width: 208px;
+    height: 62px;
+}
+
 fieldset {
     border: 5px solid #FF1901;
     margin: 40px;
@@ -218,8 +223,8 @@ footer {
     }
 
     .gif {
-        width: 300px;
-        height: auto;
+        width: 208px;
+        height: 62px;
     }
 
 }
@@ -242,8 +247,8 @@ footer {
     }
 
     .gif {
-        width: 200px;
-        height: auto;
+        width: 208px;
+        height: 62px;
     }
 }
     
