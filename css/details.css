@@ -69,6 +69,11 @@ nav {
     margin: 40px;
 }
 
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
 fieldset {
     border: 5px solid #FF1901;
     margin: 40px;
