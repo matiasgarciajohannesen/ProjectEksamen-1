@@ -76,10 +76,6 @@ main {
     justify-content: center;
 }
 
-.gif {
-    width: 300px;
-    height: auto;
-}
 
 .headline {
     display: grid;
