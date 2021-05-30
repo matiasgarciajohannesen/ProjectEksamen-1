@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-list a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: bold;
@@ -54,7 +54,7 @@ nav {
 .menu div {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 5px;
 }
 
