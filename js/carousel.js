@@ -1,14 +1,14 @@
 const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=100";
 const carouselContainer = document.querySelector('.karusel');
 const posts = document.querySelector(".blog");
-const loading = document.querySelector(".loading");
+const load = document.querySelector(".loading");
 
 
  fetch(F1)
      .then(response => response.json())
      .then(data => formula(data))
      .catch(error => console.error(error))
-     .finally(() => loading.style.display = "none");
+     .finally(() => load.style.display = "none");
 
 const formula = (blogs) => {
      console.log(blogs);
