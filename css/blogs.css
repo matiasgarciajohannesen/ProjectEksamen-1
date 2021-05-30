@@ -8,6 +8,8 @@ html {
     font-family: 'Titillium Web', sans-serif;
 }
 
+
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -63,6 +65,11 @@ fieldset {
     margin: 40px;
     border-radius: 8px;
     border-left: none;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
 }
 
 legend {

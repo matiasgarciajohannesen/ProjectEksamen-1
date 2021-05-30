@@ -69,6 +69,11 @@ nav {
     background-size: cover;
 }
 
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
 label { 
     display: inline-block;
     width: 100px; 

@@ -11,12 +11,15 @@ const F1 = `https://matiasjohannesen.no/wp-json/wp/v2/posts/${id}?_embed=true`;
 const posts = document.querySelector(".blog");
 const modal = document.querySelector(".modal");
 const body = document.querySelector("body");
+const loading = document.querySelector(".loading");
 
  fetch(F1)
      .then(response => response.json())
      .then(data => formula(data))
      .catch(error => console.error(error))
+     .finally(() => loading.style.display = "none");
 
+     
 const formula = (blog) => {
      console.log(blog);
      posts.innerHTML = "";

@@ -3,11 +3,14 @@ const F1 = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page
 const loadMore = "https://matiasjohannesen.no/wp-json/wp/v2/posts?_embed=true&per_page=3&offset=9";
 const posts = document.querySelector(".allBlogs");
 const more = document.querySelector(".loadMore");
+const loading = document.querySelector(".loading");
+
 
  fetch(F1)
      .then(response => response.json())
      .then(data => formula(data))
      .catch(error => console.error(error))
+     .finally(() => loading.style.display = "none");
 
 const formula = (blogs) => {
      console.log(blogs);

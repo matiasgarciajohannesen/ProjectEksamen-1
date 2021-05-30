@@ -71,6 +71,12 @@ main {
     background-size: cover;
 }
 
+.loading {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .headline {
     display: grid;
     justify-content: center;
