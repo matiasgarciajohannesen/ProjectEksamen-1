@@ -28,7 +28,7 @@ function validateForm(e) {
   console.log("subject: " + submittedSub);
   subTxt.innerHTML = "";
   if (submittedSub.length < 15) {
-      subTxt.innerHTML += "Must be at least 10 characters."
+      subTxt.innerHTML += "Must be at least 15 characters."
   }
 
     let submittedEmail = email.value.trim();

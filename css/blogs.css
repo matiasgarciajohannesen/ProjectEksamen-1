@@ -72,6 +72,8 @@ fieldset {
     justify-content: center;
 }
 
+
+
 legend {
     font-size: xx-large;
     color: #FF1901;
@@ -242,6 +244,15 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    .loading {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gif {
+        width: 300px;
+        height: auto;
+    }    
 }
 
 /*mobil */
@@ -273,6 +284,11 @@ footer {
 
     .all h2{
         font-size: medium;
+    }
+
+    .gif {
+        width: 100px;
+        height: auto;
     }
 }    
 

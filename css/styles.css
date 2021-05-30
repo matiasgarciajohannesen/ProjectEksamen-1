@@ -74,7 +74,11 @@ main {
 .loading {
     display: flex;
     justify-content: center;
-    width: 100%;
+}
+
+.gif {
+    width: 300px;
+    height: auto;
 }
 
 .headline {
